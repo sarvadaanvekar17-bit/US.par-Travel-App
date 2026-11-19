@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations | US.par</title>
+    <meta name="description" content="Explore Indian places and international destinations across continents with US.par.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg site-navbar" id="siteNavbar">
+    <div class="container">
+        <a class="navbar-brand site-brand" href="home.html" aria-label="US.par home">
+            <span class="brand-mark" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></svg>
+            </span>
+            <span>US.<em>par</em></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+                <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="destination.html">Destinations</a></li>
+                <li class="nav-item"><a class="nav-link" href="bookings.html">Bookings</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="login.html" id="navAuthLink">Login</a></li>
+                <li class="nav-item ms-lg-3 mt-3 mt-lg-0"><a class="btn btn-burgundy" href="signup.html">Sign Up</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header class="page-hero">
+    <div class="container">
+        <div class="page-hero-content reveal visible">
+            <span class="eyebrow">Destination collection</span>
+            <h1>India first, then the whole world</h1>
+            <p>Choose from beloved Indian escapes or international journeys across the continents.</p>
+        </div>
+    </div>
+</header>
+
+<section class="section">
+    <div class="container">
+        <div class="section-heading reveal">
+            <span class="eyebrow">Choose your mood</span>
+            <h2>Curated journeys for every kind of traveler</h2>
+        </div>
+        <div class="filter-bar" role="group" aria-label="Filter destinations">
+            <button class="filter-btn active" type="button" data-filter="all">All</button>
+            <button class="filter-btn" type="button" data-filter="india">India</button>
+            <button class="filter-btn" type="button" data-filter="international">International</button>
+            <button class="filter-btn" type="button" data-filter="beach">Beach</button>
+            <button class="filter-btn" type="button" data-filter="city">City</button>
+            <button class="filter-btn" type="button" data-filter="mountain">Mountain</button>
+        </div>
+        <div class="travel-grid" id="destinationGrid">
+
+            <article class="travel-card reveal" data-categories="india beach">
+                <div class="travel-media">
+                    <img src="https://images.unsplash.com/photo-1650747808629-d0d83c607ba4?w=900&q=80&auto=format&fit=crop" alt="Goa beach" loading="lazy">
+                    <span class="travel-tag">India</span>
+                    <span class="price-tag">₹18,000 / person</span>
+                </div>
+                <div class="travel-body">
+                    <h3>Goa, India</h3>
+                    <p>Beach shacks, sunset cruises, Portuguese heritage, and easy island hops.</p>
+                    <div class="travel-meta"><span class="status-pill">4N / 5D</span><span class="status-pill">Beach</span><span class="status-pill">4.8 ★</span></div>
+                    <div class="travel-actions"><span class="price">₹18,000</span><a class="btn btn-burgundy" href="bookings.html?destination=Goa">Book Now</a></div>
+                </div>
+            </article>
+
+            <article class="travel-card reveal" data-categories="india beach">
+                <div class="travel-media">
+                    <img src="https://images.unsplash.com/photo-1670332941539-954ad1186540?w=900&q=80&auto=format&fit=crop" alt="Kerala backwaters" loading="lazy">
+                    <span class="travel-tag">India</span>
+                    <span class="price-tag">₹22,000 / person</span>
+                </div>
+                <div class="travel-body">
+                    <h3>Kerala, India</h3>
+                    <p>Backwater houseboats, tea gardens, ayurveda, and quiet coastal mornings.</p>
+                    <div class="travel-meta"><span class="status-pill">5N / 6D</span><span class="status-pill">Backwaters</span><span class="status-pill">4.9 ★</span></div>
+                    <div class="travel-actions"><span class="price">₹22,000</span><a class="btn btn-burgundy" href="bookings.html?destination=Kerala">Book Now</a></div>
+                </div>
+            </article>
+
+            <article class="travel-card reveal" data-categories="india city">
+                <div class="travel-media">
+                    <img src="https://images.unsplash.com/photo-1716534133704-5a5c2a9c7512?w=900&q=80&auto=format&fit=crop" alt="Rajasthan palace" loading="lazy">
+                    <span class="travel-tag">India</span>
+                    <span class="price-tag">₹20,000 / person</span>
+                </div>
+                <div class="travel-body">
+                    <h3>Rajasthan, India</h3>
+                    <p>Palaces, desert camps, colorful markets, and royal road trips.</p>
+                    <div class="travel-meta"><span class="status-pill">4N / 5D</span><span class="status-pill">Culture</span><span class="status-pill">4.7 ★</span></div>
+                    <div class="travel-actions"><span class="price">₹20,000</span><a class="btn btn-burgundy" href="bookings.html?destination=Rajasthan">Book Now</a></div>
+                </div>
+            </article>
+
+            <article class="travel-card reveal" data-categories="india mountain">
+                <div class="travel-media">
+                    <img src="https://images.unsplash.com/photo-1675162887692-242726e35f00?w=900&q=80&auto=format&fit=crop" alt="Ladakh mountains" loading="lazy">
+                    <span class="travel-tag">India</span>
+                    <span class="price-tag">₹32,000 / person</span>
+                </div>
+                <div class="travel-body">
+                    <h3>Ladakh, India</h3>
+                    <p>High-altitude lakes, monasteries, mountain passes, and stark landscapes.</p>
+                    <div class="travel-meta"><span class="status-pill">6N / 7D</span><span class="status-pill">Adventure</span><span class="status-pill">4.9 ★</span></div>
+                    <div class="travel-actions"><span class="price">₹32,000</span><a class="btn btn-burgundy" href="bookings.html?destination=Ladakh">Book Now</a></div>
+                </div>
+            </article>
+
+            <article class="travel-card reveal" data-categories="india mountain">
+                <div class="travel-media">
+                    <img src="https://images.unsplash.com/photo-1711943728939-d50142512e5b?w=900&q=80&auto=format&fit=crop" alt="Manali hills" loading="lazy">
+                    <span class="travel-tag">India</span>
+                    <span class="price-tag">₹16,000 / person</span>
+                </div>
+                <div class="travel-body">
+                    <h3>Manali, India</h3>
+                    <p>Pine forests, river valleys, snow points, and cozy mountain stays.</p>
+                    <div class="travel-meta"><span class="status-pill">4N / 5D</span><span class="status-pill">Hill station</span><span class="status-pill">4.6 ★</span></div>
+                    <div class="travel-actions"><span class="price">₹16,000</span><a class="btn btn-burgundy" href="bookings.html?destination=Manali">Book Now</a></div>
+                </div>
+            </article>
+
+            <article class="travel-card reveal" data-categories="india city">
+                <div class="travel-media">
+                    <img src="https://images.unsplash.com/photo-1738508951420-525855fb8d56?w=900&q=80&auto=format&fit=crop" alt="Jaipur Hawa Mahal" loading="lazy">
+                    <span class="travel-tag">India</span>
+                    <span class="price-tag">₹19,000 / person</span>
+                </div>
+                <div class="travel-body">
+                    <h3>Jaipur, India</h3>
+                    <p>The Pink City’s forts, bazaars, palaces, and royal cuisine.</p>
+                    <div class="travel-meta"><span class="status-pill">3N / 4D</span><span class="status-pill">Heritage</span><span class="status-pill">4.7 ★</span></div>
+                    <div class="travel-actions"><span class="price">₹19,000</span><a class="btn btn-burgundy" href="bookings.html?destination=Jaipur">Book Now</a></div>
+                </div>
+            </article>
+
+            <article class="travel-card reveal" data-categories="international beach">
+                <div class="travel-media">
+                    <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=900&q=80&auto=format&fit=crop" alt="Bali beaches" loading="lazy">
+                    <span class="luxury-badge">Luxury ✦</span>
+                    <span class="price-tag">₹1,30,000 / person</span>
+                </div>
+                <div class="travel-body">
+                    <h3>Bali, Indonesia</h3>
+                    <p>Beach clubs, rice terraces, hidden waterfalls, and relaxed island living.</p>
+                    <div class="travel-meta"><span class="status-pill">5N / 6D</span><span class="status-pill">Asia</span><span class="status-pill">4.9 ★</span></div>
+                    <div class="travel-actions"><span class="price">₹1,30,000</span><a class="btn btn-burgundy" href="bookings.html?destination=Bali">Book Now</a></div>
+                </div>
+            </article>
+
+            <article class="travel-card reveal" data-categories="international city">
+                <div class="travel-media">
+                    <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=900&q=80&auto=format&fit=crop" alt="Paris skyline" loading="lazy">
+                    <span class="luxury-badge">Luxury ✦</span>
+                    <span class="price-tag">₹2,23,000 / person</span>
+                </div>
+                <div class="travel-body">
+                    <h3>Paris, France</h3>
+                    <p>Romantic boulevards, world-class museums, café mornings, and golden evenings.</p>
+                    <div class="travel-meta"><span class="status-pill">4N / 5D</span><span class="status-pill">Europe</span><span class="status-pill">4.8 ★</span></div>
+                    <div class="travel-actions"><span class="price">₹2,23,000</span><a class="btn btn-burgundy" href="bookings.html?destination=Paris">Book Now</a></div>
+                </div>
+            </article>
+
+            <article class="travel-card reveal" data-categories="international mountain">
+                <div class="travel-media">
+                    <img src="https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=900&q=80&auto=format&fit=crop" alt="Swiss Alps lake" loading="lazy">
+                    <span class="price-tag">₹73,000 / person</span>
+                </div>
+                <div class="travel-body">
+                    <h3>Switzerland</h3>
+                    <p>Snowy peaks, alpine trains, quiet villages, and mirror-like lakes.</p>
+                    <div class="travel-meta"><span class="status-pill">6N / 7D</span><span class="status-pill">Europe</span><span class="status-pill">5.0 ★</span></div>
+                    <div class="travel-actions"><span class="price">₹73,000</span><a class="btn btn-burgundy" href="bookings.html?destination=Switzerland">Book Now</a></div>
+                </div>
+            </article>
+
+            <article class="travel-card reveal" data-categories="international beach">
+                <div class="travel-media">
+                    <img src="https://images.unsplash.com/photo-1745526220488-6d7b179ac084?w=900&q=80&auto=format&fit=crop" alt="Kenya safari elephants" loading="lazy">
+                    <span class="travel-tag">Africa</span>
+                    <span class="price-tag">₹67,000 / person</span>
+                </div>
+                <div class="travel-body">
+                    <h3>Kenya</h3>
+                    <p>Big Five safaris, savanna sunsets, and warm coastal escapes.</p>
+                    <div class="travel-meta"><span class="status-pill">5N / 6D</span><span class="status-pill">Safari</span><span class="status-pill">4.8 ★</span></div>
+                    <div class="travel-actions"><span class="price">₹67,000</span><a class="btn btn-burgundy" href="bookings.html?destination=Kenya">Book Now</a></div>
+                </div>
+            </article>
+
+            <article class="travel-card reveal" data-categories="international city">
+                <div class="travel-media">
+                    <img src="https://images.unsplash.com/photo-1761300560840-0493d5728f4a?w=900&q=80&auto=format&fit=crop" alt="New York skyline" loading="lazy">
+                    <span class="travel-tag">North America</span>
+                    <span class="luxury-badge">Luxury ✦</span>
+                    <span class="price-tag">₹1,65,000 / person</span>
+                </div>
+                <div class="travel-body">
+                    <h3>New York, USA</h3>
+                    <p>Skyline views, Broadway nights, museums, and nonstop city energy.</p>
+                    <div class="travel-meta"><span class="status-pill">5N / 6D</span><span class="status-pill">Metropolis</span><span class="status-pill">4.7 ★</span></div>
+                    <div class="travel-actions"><span class="price">₹1,65,000</span><a class="btn btn-burgundy" href="bookings.html?destination=New%20York">Book Now</a></div>
+                </div>
+            </article>
+
+            <article class="travel-card reveal" data-categories="international beach">
+                <div class="travel-media">
+                    <img src="https://images.unsplash.com/photo-1711235312789-f33efa18e0c1?w=900&q=80&auto=format&fit=crop" alt="Rio de Janeiro beach" loading="lazy">
+                    <span class="travel-tag">South America</span>
+                    <span class="luxury-badge">Luxury ✦</span>
+                    <span class="price-tag">₹1,20,000 / person</span>
+                </div>
+                <div class="travel-body">
+                    <h3>Rio de Janeiro, Brazil</h3>
+                    <p>Beaches, samba rhythms, rainforest views, and golden coastlines.</p>
+                    <div class="travel-meta"><span class="status-pill">5N / 6D</span><span class="status-pill">Coastal</span><span class="status-pill">4.8 ★</span></div>
+                    <div class="travel-actions"><span class="price">₹1,20,000</span><a class="btn btn-burgundy" href="bookings.html?destination=Rio%20de%20Janeiro">Book Now</a></div>
+                </div>
+            </article>
+
+            <article class="travel-card reveal" data-categories="international city">
+                <div class="travel-media">
+                    <img src="https://images.unsplash.com/photo-1748243262890-bffad63a7807?w=900&q=80&auto=format&fit=crop" alt="Sydney harbour" loading="lazy">
+                    <span class="travel-tag">Oceania</span>
+                    <span class="luxury-badge">Luxury ✦</span>
+                    <span class="price-tag">₹1,50,000 / person</span>
+                </div>
+                <div class="travel-body">
+                    <h3>Sydney, Australia</h3>
+                    <p>Harbor icons, coastal walks, galleries, and easy island days.</p>
+                    <div class="travel-meta"><span class="status-pill">5N / 6D</span><span class="status-pill">Harbor city</span><span class="status-pill">4.7 ★</span></div>
+                    <div class="travel-actions"><span class="price">₹1,50,000</span><a class="btn btn-burgundy" href="bookings.html?destination=Sydney">Book Now</a></div>
+                </div>
+            </article>
+
+            <article class="travel-card reveal" data-categories="international mountain">
+                <div class="travel-media">
+                    <img src="https://images.unsplash.com/photo-1745282322383-8ec67cc895b6?w=900&q=80&auto=format&fit=crop" alt="Antarctica icebergs" loading="lazy">
+                    <span class="travel-tag">Antarctica</span>
+                    <span class="luxury-badge">Luxury ✦</span>
+                    <span class="price-tag">₹2,00,000 / person</span>
+                </div>
+                <div class="travel-body">
+                    <h3>Antarctica Expedition</h3>
+                    <p>Icebergs, penguin colonies, glacier landscapes, and once-in-a-lifetime cruising.</p>
+                    <div class="travel-meta"><span class="status-pill">8N / 10D</span><span class="status-pill">Expedition</span><span class="status-pill">5.0 ★</span></div>
+                    <div class="travel-actions"><span class="price">₹2,00,000</span><a class="btn btn-burgundy" href="bookings.html?destination=Antarctica">Book Now</a></div>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<section class="section section-dark">
+    <div class="container">
+        <div class="section-heading reveal">
+            <span class="eyebrow">How it works</span>
+            <h2>From inspiration to boarding pass</h2>
+        </div>
+        <div class="row g-4">
+            <div class="col-md-4 reveal"><div class="info-card h-100"><span class="price-tag mb-3">Step 01</span><h3>Choose a destination</h3><p>Filter by India, international continents, mood, duration, and budget.</p></div></div>
+            <div class="col-md-4 reveal"><div class="info-card h-100"><span class="price-tag mb-3">Step 02</span><h3>Customize your trip</h3><p>Select dates, travelers, and travel style in a few simple steps.</p></div></div>
+            <div class="col-md-4 reveal"><div class="info-card h-100"><span class="price-tag mb-3">Step 03</span><h3>Travel with confidence</h3><p>Our team confirms details and supports you throughout the journey.</p></div></div>
+        </div>
+    </div>
+</section>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-4"><a class="footer-brand" href="home.html">US.<span style="color:var(--gold)">par</span></a><p>Thoughtfully designed travel experiences for people who want more from every journey.</p></div>
+            <div class="col-6 col-lg-2"><h4 class="h6 text-uppercase">Explore</h4><a class="footer-link" href="home.html">Home</a><a class="footer-link" href="destination.html">Destinations</a><a class="footer-link" href="bookings.html">Bookings</a></div>
+            <div class="col-6 col-lg-2"><h4 class="h6 text-uppercase">Support</h4><a class="footer-link" href="contact.html">Contact</a><a class="footer-link" href="contact.html#faq">FAQs</a><a class="footer-link" href="bookings.html">Manage trip</a></div>
+            <div class="col-lg-4"><h4 class="h6 text-uppercase">Get inspired</h4><p>Travel tips, new routes, and limited seasonal offers delivered monthly.</p><a class="btn btn-gold" href="contact.html">Stay Connected</a></div>
+        </div>
+        <div class="footer-bottom">© 2026 US.par | Travel Beyond Limits</div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

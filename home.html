@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>US.par | Premium Travel Booking</title>
+    <meta name="description" content="US.par helps you discover beautiful destinations and book curated trips with confidence.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg site-navbar" id="siteNavbar">
+    <div class="container">
+        <a class="navbar-brand site-brand" href="home.html" aria-label="US.par home">
+            <span class="brand-mark" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></svg>
+            </span>
+            <span>US.<em>par</em></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="home.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="destination.html">Destinations</a></li>
+                <li class="nav-item"><a class="nav-link" href="bookings.html">Bookings</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="login.html" id="navAuthLink">Login</a></li>
+                <li class="nav-item ms-lg-3 mt-3 mt-lg-0"><a class="btn btn-burgundy" href="signup.html">Sign Up</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header class="hero">
+    <div class="container">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-7 reveal visible">
+                <span class="eyebrow">Curated journeys for modern travelers</span>
+                <h1>Travel beautifully. Travel effortlessly.</h1>
+                <p>Discover handpicked destinations, transparent pricing, and thoughtful itineraries designed for unforgettable memories.</p>
+                <div class="hero-actions">
+                    <a href="destination.html" class="btn btn-fresh btn-lg">Explore Destinations</a>
+                    <a href="bookings.html" class="btn btn-outline-burgundy btn-lg">Book Your Trip</a>
+                </div>
+            </div>
+            <div class="col-lg-5 reveal visible">
+                <form class="hero-card quick-search" id="quickSearch" action="bookings.html" method="get">
+                    <h3 class="mb-3">Find your next escape</h3>
+                    <div class="mb-3">
+                        <label class="form-label" for="quickDestination">Destination</label>
+                        <select class="form-select" id="quickDestination" name="destination">
+                            <option value="">Choose a place</option>
+                            <optgroup label="India">
+                                <option value="Goa">Goa, India</option>
+                                <option value="Kerala">Kerala, India</option>
+                                <option value="Rajasthan">Rajasthan, India</option>
+                                <option value="Ladakh">Ladakh, India</option>
+                                <option value="Manali">Manali, India</option>
+                                <option value="Jaipur">Jaipur, India</option>
+                            </optgroup>
+                            <optgroup label="International">
+                                <option value="Bali">Bali, Indonesia</option>
+                                <option value="Paris">Paris, France</option>
+                                <option value="Switzerland">Switzerland</option>
+                                <option value="Kenya">Kenya</option>
+                                <option value="New York">New York, USA</option>
+                                <option value="Rio de Janeiro">Rio de Janeiro, Brazil</option>
+                                <option value="Sydney">Sydney, Australia</option>
+                                <option value="Antarctica">Antarctica Expedition</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div class="row g-2 mb-3">
+                        <div class="col-7">
+                            <label class="form-label" for="quickDate">Travel date</label>
+                            <input class="form-control" type="date" id="quickDate" name="date" required>
+                        </div>
+                        <div class="col-5">
+                            <label class="form-label" for="quickTravellers">Travellers</label>
+                            <input class="form-control" type="number" id="quickTravellers" name="travellers" min="1" max="20" step="1" value="1">
+                        </div>
+                    </div>
+                    <button class="btn btn-burgundy w-100" type="submit">Continue Booking</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="section section-dark">
+    <div class="container">
+        <div class="stats-grid">
+            <div class="stat-card reveal"><strong><span data-count="12">0</span>+</strong><span>Curated destinations</span></div>
+            <div class="stat-card reveal"><strong><span data-count="4800">0</span>+</strong><span>Happy travelers</span></div>
+            <div class="stat-card reveal"><strong><span data-count="98">0</span>%</strong><span>Satisfaction rate</span></div>
+            <div class="stat-card reveal"><strong><span data-count="24">0</span>/7</strong><span>Concierge support</span></div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="section-heading reveal">
+            <span class="eyebrow">Signature escapes</span>
+            <h2>Destinations made for your mood</h2>
+            <p>From tropical beaches to romantic cities and alpine views, choose a journey that feels personal.</p>
+        </div>
+        <div class="travel-grid">
+            <article class="travel-card reveal">
+                <div class="travel-media">
+                    <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=900&q=80&auto=format&fit=crop" alt="Bali beach and palm trees" loading="lazy">
+                    <span class="travel-tag">Beach escape</span>
+                </div>
+                <div class="travel-body">
+                    <h3>Bali, Indonesia</h3>
+                    <p>Relax in emerald rice terraces, unwind on golden beaches, and enjoy a slower pace of life.</p>
+                    <div class="travel-meta"><span class="status-pill">5N / 6D</span><span class="status-pill">4.9 rating</span></div>
+                    <div class="travel-actions">
+                        <div><small>Starting from</small><span class="price">₹1,30,000</span></div>
+                        <a class="btn btn-burgundy" href="bookings.html?destination=Bali">Book Now</a>
+                    </div>
+                </div>
+            </article>
+            <article class="travel-card reveal">
+                <div class="travel-media">
+                    <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=900&q=80&auto=format&fit=crop" alt="Paris cityscape" loading="lazy">
+                    <span class="travel-tag">City romance</span>
+                </div>
+                <div class="travel-body">
+                    <h3>Paris, France</h3>
+                    <p>Walk along the Seine, admire iconic architecture, and experience Parisian style at its best.</p>
+                    <div class="travel-meta"><span class="status-pill">4N / 5D</span><span class="status-pill">4.8 rating</span></div>
+                    <div class="travel-actions">
+                        <div><small>Starting from</small><span class="price">₹2,23,000</span></div>
+                        <a class="btn btn-burgundy" href="bookings.html?destination=Paris">Book Now</a>
+                    </div>
+                </div>
+            </article>
+            <article class="travel-card reveal">
+                <div class="travel-media">
+                    <img src="https://images.unsplash.com/photo-1531366936337-7c912a4589a7?w=900&q=80&auto=format&fit=crop" alt="Switzerland mountains and lake" loading="lazy">
+                    <span class="travel-tag">Mountain luxury</span>
+                </div>
+                <div class="travel-body">
+                    <h3>Switzerland</h3>
+                    <p>Discover scenic rail journeys, alpine villages, crystal lakes, and fresh mountain air.</p>
+                    <div class="travel-meta"><span class="status-pill">6N / 7D</span><span class="status-pill">5.0 rating</span></div>
+                    <div class="travel-actions">
+                        <div><small>Starting from</small><span class="price">₹73,000</span></div>
+                        <a class="btn btn-burgundy" href="bookings.html?destination=Switzerland">Book Now</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="text-center mt-5 reveal">
+            <a href="destination.html" class="btn btn-outline-burgundy btn-lg">View All Destinations</a>
+        </div>
+    </div>
+</section>
+
+<section class="section" style="background: var(--cream-dark);">
+    <div class="container">
+        <div class="section-heading reveal">
+            <span class="eyebrow">Why travel with us</span>
+            <h2>A premium experience from start to finish</h2>
+        </div>
+        <div class="feature-grid">
+            <div class="info-card reveal">
+                <div class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+                <h3>Trusted planning</h3>
+                <p>Every itinerary is reviewed for comfort, safety, timing, and memorable experiences.</p>
+            </div>
+            <div class="info-card reveal">
+                <div class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"/><path d="M12 18V6"/></svg></div>
+                <h3>Transparent pricing</h3>
+                <p>See clear starting prices with no hidden booking surprises.</p>
+            </div>
+            <div class="info-card reveal">
+                <div class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div>
+                <h3>24/7 concierge</h3>
+                <p>Real support before, during, and after your journey.</p>
+            </div>
+            <div class="info-card reveal">
+                <div class="feature-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 2l4 4-4 4"/><path d="M3 11v-1a4 4 0 0 1 4-4h14"/><path d="M7 22l-4-4 4-4"/><path d="M21 13v1a4 4 0 0 1-4 4H3"/></svg></div>
+                <h3>Flexible changes</h3>
+                <p>Simple booking management for plans that evolve.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="section-heading reveal">
+            <span class="eyebrow">Traveler stories</span>
+            <h2>Journeys people still talk about</h2>
+        </div>
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="testimonial-card mx-auto" style="max-width:760px;">
+                        <blockquote>“The Bali itinerary felt effortless. Every transfer was planned, and the team adjusted our trip when we wanted a quieter beach day.”</blockquote>
+                        <div class="testimonial-author"><span class="avatar">AR</span><div><strong>Ananya Rao</strong><span>Bali traveler</span></div></div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="testimonial-card mx-auto" style="max-width:760px;">
+                        <blockquote>“Paris was beautifully organized, from hotel suggestions to dinner reservations. It felt premium without being stressful.”</blockquote>
+                        <div class="testimonial-author"><span class="avatar">MK</span><div><strong>Meera Kapoor</strong><span>Paris traveler</span></div></div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="testimonial-card mx-auto" style="max-width:760px;">
+                        <blockquote>“The Switzerland package gave us mountain views, scenic trains, and enough free time to truly enjoy the trip.”</blockquote>
+                        <div class="testimonial-author"><span class="avatar">JD</span><div><strong>Jordan Diaz</strong><span>Switzerland traveler</span></div></div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-indicators mt-4">
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="First testimonial"></button>
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Second testimonial"></button>
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Third testimonial"></button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="cta-panel reveal">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-8">
+                    <span class="eyebrow">Ready when you are</span>
+                    <h2>Your next story starts with one click.</h2>
+                    <p>Choose a destination, set your dates, and let US.par shape a trip around you.</p>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <a href="bookings.html" class="btn btn-gold btn-lg">Start Booking</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="site-footer" id="contact">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-4">
+                <a class="footer-brand" href="home.html">US.<span style="color:var(--gold)">par</span></a>
+                <p>Thoughtfully designed travel experiences for people who want more from every journey.</p>
+            </div>
+            <div class="col-6 col-lg-2">
+                <h4 class="h6 text-uppercase">Explore</h4>
+                <a class="footer-link" href="home.html">Home</a>
+                <a class="footer-link" href="destination.html">Destinations</a>
+                <a class="footer-link" href="bookings.html">Bookings</a>
+            </div>
+            <div class="col-6 col-lg-2">
+                <h4 class="h6 text-uppercase">Support</h4>
+                <a class="footer-link" href="contact.html">Contact</a>
+                <a class="footer-link" href="contact.html#faq">FAQs</a>
+                <a class="footer-link" href="bookings.html">Manage trip</a>
+            </div>
+            <div class="col-lg-4">
+                <h4 class="h6 text-uppercase">Get inspired</h4>
+                <p>Travel tips, new routes, and limited seasonal offers delivered monthly.</p>
+                <a class="btn btn-gold" href="contact.html">Stay Connected</a>
+            </div>
+        </div>
+        <div class="footer-bottom">© 2026 US.par | Travel Beyond Limits</div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
