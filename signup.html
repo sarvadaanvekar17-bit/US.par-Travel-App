@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | US.par</title>
+    <meta name="description" content="Create your US.par travel account.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg site-navbar" id="siteNavbar">
+    <div class="container">
+        <a class="navbar-brand site-brand" href="home.html" aria-label="US.par home">
+            <span class="brand-mark" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></svg>
+            </span>
+            <span>US.<em>par</em></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+                <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="destination.html">Destinations</a></li>
+                <li class="nav-item"><a class="nav-link" href="bookings.html">Bookings</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="login.html" id="navAuthLink">Login</a></li>
+                <li class="nav-item ms-lg-3 mt-3 mt-lg-0"><a class="btn btn-burgundy" href="signup.html">Sign Up</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main class="auth-section">
+    <div class="container">
+        <div class="auth-layout">
+            <aside class="auth-side reveal visible">
+                <span class="eyebrow">Join the journey</span>
+                <h2>Create your travel profile.</h2>
+                <p>Save preferences, manage booking requests, and get personalized destination inspiration.</p>
+            </aside>
+            <div class="auth-card form-card reveal visible">
+                <h2>Create account</h2>
+                <p class="auth-subtitle">Start planning with a free US.par account.</p>
+                <form id="signupForm" novalidate>
+                    <div class="mb-3">
+                        <label class="form-label" for="signupName">Full name</label>
+                        <input class="form-control" type="text" id="signupName" name="name" placeholder="Enter your full name" autocomplete="name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="signupEmail">Email address</label>
+                        <input class="form-control" type="email" id="signupEmail" name="email" placeholder="you@example.com" autocomplete="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="signupPhone">Phone number</label>
+                        <input class="form-control" type="tel" id="signupPhone" name="phone" placeholder="+91 00000 00000" autocomplete="tel" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="signupPassword">Password</label>
+                        <div class="input-group">
+                            <input class="form-control" type="password" id="signupPassword" name="password" placeholder="Create a password" autocomplete="new-password" required>
+                            <button class="btn btn-outline-burgundy password-toggle" type="button" data-target="signupPassword" aria-label="Show password">Show</button>
+                        </div>
+                        <div class="progress mt-2" style="height:7px;">
+                            <div id="passwordStrength" class="progress-bar" role="progressbar" style="width:0%; background:var(--sand);"></div>
+                        </div>
+                        <small id="passwordHint" class="text-muted">Use at least 8 characters for a stronger password.</small>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="signupConfirm">Confirm password</label>
+                        <div class="input-group">
+                            <input class="form-control" type="password" id="signupConfirm" name="confirmPassword" placeholder="Repeat your password" autocomplete="new-password" required>
+                            <button class="btn btn-outline-burgundy password-toggle" type="button" data-target="signupConfirm" aria-label="Show password">Show</button>
+                        </div>
+                    </div>
+                    <div class="form-check mb-4">
+                        <input class="form-check-input" type="checkbox" id="termsCheck" name="terms" required>
+                        <label class="form-check-label" for="termsCheck">I agree to the travel terms and privacy policy.</label>
+                    </div>
+                    <button class="btn btn-burgundy w-100" type="submit">Create Account</button>
+                </form>
+                <div class="auth-links">
+                    <span>Already have an account?</span>
+                    <a href="login.html">Sign in</a>
+                </div>
+                <div id="signupMessage" class="confirmation-card" role="status" aria-live="polite"></div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-bottom">© 2026 US.par | Travel Beyond Limits</div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
