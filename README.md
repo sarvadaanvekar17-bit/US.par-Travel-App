@@ -20,17 +20,17 @@ A travel-focused web application designed to help users explore destinations and
 <div align="center">
 
 <h3>🏠 Homepage</h3>
-<img src="https://raw.githubusercontent.com/sarvadaanvekar17-bit/US.par-Travel-App/main/homepage.png" width="100%" alt="US.par Homepage"/>
+<img src="https://raw.githubusercontent.com/sarvadaanvekar17-bit/US.par-Travel-App/main/homepage(2).png" width="100%" alt="US.par Homepage"/>
 
 <br/><br/>
 
 <h3>🌍 Explore Destinations</h3>
-<img src="https://raw.githubusercontent.com/sarvadaanvekar17-bit/US.par-Travel-App/main/destinations.png" width="100%" alt="US.par Destinations"/>
+<img src="https://raw.githubusercontent.com/sarvadaanvekar17-bit/US.par-Travel-App/main/destination.png" width="100%" alt="US.par Destinations"/>
 
 <br/><br/>
 
 <h3>🧳 Bookings</h3>
-<img src="https://raw.githubusercontent.com/sarvadaanvekar17-bit/US.par-Travel-App/main/bookings.png" width="100%" alt="US.par Bookings"/>
+<img src="https://raw.githubusercontent.com/sarvadaanvekar17-bit/US.par-Travel-App/main/booking.png" width="100%" alt="US.par Bookings"/>
 
 <br/><br/>
 
