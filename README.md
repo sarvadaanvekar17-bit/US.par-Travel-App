@@ -20,7 +20,7 @@ A travel-focused web application designed to help users explore destinations and
 <div align="center">
 
 <h3>🏠 Homepage</h3>
-<img src="https://raw.githubusercontent.com/sarvadaanvekar17-bit/US.par-Travel-App/main/homepage(2).png" width="100%" alt="US.par Homepage"/>
+<img src="https://raw.githubusercontent.com/sarvadaanvekar17-bit/US.par-Travel-App/main/home.png" width="100%" alt="US.par Homepage"/>
 
 <br/><br/>
 
